@@ -1,2 +1,5 @@
-# moreirasalles
-slot machine
+# MoreiraSalles
+git clone 
+cd moreirasalles
+npm install
+npm start
