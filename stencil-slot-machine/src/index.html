@@ -10,41 +10,36 @@
 
   <style>
     .container {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       display: inline-block;
-      border: 2px solid #444;
-      border-radius: 6px;
-      padding: 1px;
-      margin: 0 3px;
+      border: 3px solid #444;
+      border-radius: 9px;
+      padding: 2px;
+      margin: 0 6px;
     }
     .buttons {
-      margin: 3px;
+      margin: 6px;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <slot-machine id="machine1" width="100px" height="100px" images-dir="/assets/img/"
-      images="['slot1.png', 'slot2.png', 'slot3.png']" />
+    <slot-machine id="machine1" width="150px" height="150px" images-dir="/assets/img/"
+      images="['slot1.png', 'slot2.png', 'slot3.png', 'slot4.png', 'slot5.png', 'slot6.png']" />
   </div>
   <div class="container">
-    <slot-machine id="machine2" active=1 width="100px" height="100px" images-dir="/assets/img/"
-      images='["slot1.png", "slot2.png", "slot3.png"]' />
+    <slot-machine id="machine2" active=1 width="150px" height="150px" images-dir="/assets/img/"
+      images='["slot1.png", "slot2.png", "slot3.png", "slot4.png", "slot5.png", "slot6.png"]' />
   </div>
   <div class="container">
-    <slot-machine id="machine3" active=2 width="100px" height="100px"
-      images='["/assets/img/slot1.png","/assets/img/slot2.png","/assets/img/slot3.png"]' />
+    <slot-machine id="machine3" active=2 width="150px" height="150px"
+      images='["/assets/img/slot1.png","/assets/img/slot2.png","/assets/img/slot3.png","/assets/img/slot4.png","/assets/img/slot5.png","/assets/img/slot6.png"]' />
   </div>
 
   <div class="buttons">
-    <button onClick="shuffle()">Shuffle</button>
-  </div>
-
-  <div class="buttons">
-    <button onClick="machine1.next()">Next</button>
-    <button onClick="machine1.prev()">Prev</button>
+    <button onClick="shuffle()">Jogar</button>
   </div>
 
   <script>
@@ -57,11 +52,11 @@
 
       setTimeout(() => {
         machine2.shuffle();
-      }, 500);
+      }, 100);
 
       setTimeout(() => {
         machine3.shuffle();
-      }, 1000);
+      }, 200);
     }
   </script>
   </body>
