@@ -1,5 +1,5 @@
 # MoreiraSalles
-git clone 
-cd moreirasalles
-npm install
-npm start
+git clone<p>
+cd moreirasalles<p>
+npm install<p>
+npm start<p>
